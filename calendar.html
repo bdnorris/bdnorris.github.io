@@ -10,12 +10,15 @@
       background-color: ghostwhite;
       font-size: 16px; /* THIS IS MY BASE FONT SIZE: IF I USE 1REM NOW, THAT WILL BE 16px */
     }
+    #site-wrapper {
+      padding: 1rem;
+    }
   </style>
 </head>
 
 <body id="calendar">
   <div id="site-wrapper">
-    
+
     <header>
       <h1>Web Design for Design Majors</h1>
       <h3>DES 340 - 001</h3>
@@ -26,7 +29,9 @@
         <li>417.425.7739</li>
         <li><a href="mailto:briannorris@missouristate.edu">BrianNorris@MissouriState.edu</a></li>
       </ul>
-      <p class="last-updated">This page last updated ::</p>
+      <p id="last-updated">
+        This page last updated
+      </p>
     </header>
 
     <section id="disclaimer">
@@ -59,6 +64,9 @@
     </section>
 
   </div>
+
+  <script src="js/moment.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
