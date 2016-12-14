@@ -1,5 +1,7 @@
 /*  ---- Layout Styles ----  */
-
+div, section, header, footer, article, p {
+  box-sizing: border-box;
+}
 
 
 
