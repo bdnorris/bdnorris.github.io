@@ -1,6 +1,9 @@
 /*  ---- Layout Styles ----  */
-div, section, header, footer, article, p {
+html {
   box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 
