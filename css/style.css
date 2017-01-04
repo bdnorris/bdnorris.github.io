@@ -1,14 +1,40 @@
 /*  ---- Layout Styles ----  */
+
+/* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
+THIS IS BETTER THAN DEFAULT, YOU SHOULD ALWAYS USE THIS:
+*/
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+/* END BOX MODEL SETTINGS */
 
 
 /*  ---- Text Classes ----  */
-.a1 {
-  color: crimson;
+
+/* Assignments */
+.a1 { color: darkcyan; }
+.a2 { color: limegreen; }
+.a3 { color: steelblue; }
+.a4 { color: mediumvioletred; }
+.a5 { color: seagreen; }
+.a6 { color: tomato; }
+.a7 { color: sienna; }
+.cs { color: slategray; }
+.off { color: crimson; }
+
+pre { display:inline; }
+
+ul {
+  list-style: disc;
+}
+
+/* ---- Calendar ---- */
+section#calendar ul {
+  list-style: none;
+}
+section#calendar ul li ul {
+  list-style: disc outside;
 }
