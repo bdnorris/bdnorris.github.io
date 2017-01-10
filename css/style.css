@@ -11,19 +11,22 @@ html {
 }
 /* END BOX MODEL SETTINGS */
 
+/* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
 
 /*  ---- Text Classes ----  */
 
+a { color: #673ab7 }
+
 /* Assignments */
-.a1 { color: darkcyan; }
-.a2 { color: limegreen; }
-.a3 { color: steelblue; }
-.a4 { color: mediumvioletred; }
-.a5 { color: seagreen; }
-.a6 { color: tomato; }
-.a7 { color: sienna; }
-.cs { color: slategray; }
-.off { color: crimson; }
+.a1 { color: #ad1457; }
+.a2 { color: #00695c; }
+.a3 { color: #d84315; }
+.a4 { color: #0277bd; }
+.a5 { color: #558b2f; }
+.a6 { color: #f9a825; }
+.a7 { color: #283593; }
+.cs { color: #607d8b; }
+.off { color: #b71c1c; }
 
 pre { display:inline; }
 
