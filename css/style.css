@@ -18,13 +18,13 @@ html {
 a { color: #673ab7 }
 
 /* Assignments */
-.a1 { color: #ad1457; }
-.a2 { color: #00695c; }
-.a3 { color: #d84315; }
-.a4 { color: #0277bd; }
-.a5 { color: #558b2f; }
-.a6 { color: #f9a825; }
-.a7 { color: #283593; }
+.a1, .a1 a { color: #ad1457; }
+.a2, .a2 a { color: #00695c; }
+.a3, .a3 a { color: #d84315; }
+.a4, .a4 a { color: #0277bd; }
+.a5, .a5 a { color: #558b2f; }
+.a6, .a6 a { color: #f9a825; }
+.a7, .a7 a { color: #283593; }
 .cs { color: #607d8b; }
 .off { color: #b71c1c; }
 
