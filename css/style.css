@@ -26,18 +26,30 @@ a { color: #673ab7 }
 .a6, .a6 a { color: #f9a825; }
 .a7, .a7 a { color: #283593; }
 .cs { color: #607d8b; }
-.off { color: #b71c1c; }
+.important, .off { color: #b71c1c; }
 
-pre { display:inline; }
+/* for code school */
+.calendar pre { display:inline; }
 
 ul {
   list-style: disc;
 }
 
+p.meta {
+  font-style: italic;
+  margin: 0.333em 0;
+}
+
 /* ---- Calendar ---- */
-section#calendar ul {
+section.calendar ul {
   list-style: none;
 }
-section#calendar ul li ul {
+section.calendar ul li ul {
   list-style: disc outside;
+}
+#past {
+  color: #90a4ae;
+}
+#past ul li, #past ul li ul li  {
+  color: #b0bec5;
 }
