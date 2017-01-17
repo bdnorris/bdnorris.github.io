@@ -28,10 +28,16 @@ a { color: #673ab7 }
 .cs { color: #607d8b; }
 .off { color: #b71c1c; }
 
-pre { display:inline; }
+/* for code school */
+#calendar pre { display:inline; }
 
 ul {
   list-style: disc;
+}
+
+p.meta {
+  font-style: italic;
+  margin: 0.333em 0;
 }
 
 /* ---- Calendar ---- */
