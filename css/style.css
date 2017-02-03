@@ -11,6 +11,72 @@ html {
 }
 /* END BOX MODEL SETTINGS */
 
+.clear {
+  clear:  both;
+}
+
+header.top-header {
+  width: 100%;
+  background-color: #4fc3f7;
+  height: 120px;
+}
+
+.site-banner {
+  float: left;
+  padding-top: 1em;
+}
+.site-banner img {
+
+}
+.site-banner h3 {
+  font-size: 1em;
+  display: inline-block;
+  padding-right: 0.5em;
+  margin: 0.5em 0 1em 0;
+  color: white;
+}
+.site-info {
+
+}
+.site-info h3, .site-info li {
+
+}
+
+nav {
+  float: right;
+  margin-top: 60px;
+  transform: translateY(-50%);
+  color: white;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 1em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #b3e5fc;
+}
+
+.wrapper {
+  width:100%;
+  max-width: 960px;
+  padding: 0 2em;
+  margin: 0 auto;
+  /*background-color: yellow;*/
+}
+
+footer {
+  background-color: #b3e5fc;
+}
+
 /* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
 
 /*  ---- Text Classes ----  */
