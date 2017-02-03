@@ -17,34 +17,37 @@
 </head>
 
 <body id="index">
-  <div id="site-wrapper">
 
-    <header>
-      <h1><a href="index.html">Web Design for Design Majors</a></h1>
-      <h3>DES 340 - 001</h3>
-      <h3>Spring 2017</h3>
-      <ul>
-        <li>Instructor: Brian Norris</li>
-        <li>Brick City 1&mdash;301</li>
-        <li>417.425.7739</li>
-        <li><a href="mailto:briannorris@missouristate.edu">BrianNorris@MissouriState.edu</a></li>
-      </ul>
+    <header class="top-header">
+      <div class="wrapper">
+        <div class="site-banner">
+          <!--<h1><a href="index.html">Web Design for Design Majors</a></h1>-->
+          <a href="index.html"><img src="/images/web-logo.svg" width="240" height="62"></a>
+          <div class="site-info">
+            <h3>DES 340 - 001</h3>
+            <h3>Spring 2017</h3>
+          </div>
+        </div>
+        <nav id="class-info">
+          <ul>
+            <li><a href="DES340-001_SP17_Norris.pdf" target="_blank">Syllabus</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="required-accounts.html">Accounts</a></li>
+            <li><a href="code-school.html">Code School</a></li>
+            <li><a href="invision.html">InVision</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div> <!-- end wrapper -->
+    </header>
+
+    <div class="content">
+      <div class="wrapper">
       <p id="last-updated">
         This page last updated
       </p>
-    </header>
 
-    <section id="class-info">
-      <h2>Important Class Information</h2>
-      <ul>
-        <li><a href="DES340-001_SP17_Norris.pdf" target="_blank">Syllabus</a></li>
-        <li><a href="calendar.html">Class Calendar</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="required-accounts.html">Required Accounts</a></li>
-        <li><a href="code-school.html">Code School Courses</a></li>
-        <li><a href="invision.html">InVision Boards</a></li>
-      </ul>
-    </section>
 
     <section id="assignment">
       <h1 class="a1">A1: Intro to Digital Typography</h1>
@@ -203,13 +206,20 @@
       </ul>
 
     </section>
-
+</div>
+</div>
     <footer>
-      <a href="https://github.com/bdnorris/bdnorris.github.io">View this project on GitHub</a><br>
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+      <div class="wrapper">
+        <ul>
+          <li>Instructor: Brian Norris</li>
+          <li>Brick City 1&mdash;301</li>
+          <li>417.425.7739</li>
+          <li><a href="mailto:briannorris@missouristate.edu">BrianNorris@MissouriState.edu</a></li>
+        </ul>
+        <a href="https://github.com/bdnorris/bdnorris.github.io">View this project on GitHub</a><br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+      </div>
     </footer>
-
-  </div>
   <script src="js/moment.js"></script>
   <script src="js/scripts.js"></script>
 </body>
