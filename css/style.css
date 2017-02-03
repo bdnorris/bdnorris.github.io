@@ -40,6 +40,19 @@ p.meta {
   margin: 0.333em 0;
 }
 
+#examples ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+#examples ul li {
+  float: left;
+}
+#examples ul li img {
+  margin: 0 1em 1em 0;
+  border: 1px solid #CFD8DC;
+}
+
 /* ---- Calendar ---- */
 section.calendar ul {
   list-style: none;
