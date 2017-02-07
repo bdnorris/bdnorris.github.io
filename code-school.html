@@ -10,123 +10,133 @@
       background-color: #eceff1;
       font-size: 16px; /* THIS IS MY BASE FONT SIZE: IF I USE 1EM NOW, THAT WILL BE 16px */
     }
-    #site-wrapper {
-      padding: 1rem;
-    }
   </style>
 </head>
 
 <body id="index">
-  <div id="site-wrapper">
 
-    <header>
-      <h1><a href="index.html">Web Design for Design Majors</a></h1>
-      <h3>DES 340 - 001</h3>
-      <h3>Spring 2017</h3>
-      <ul>
-        <li>Instructor: Brian Norris</li>
-        <li>Brick City 1&mdash;301</li>
-        <li>417.425.7739</li>
-        <li><a href="mailto:briannorris@missouristate.edu">BrianNorris@MissouriState.edu</a></li>
-      </ul>
-      <p id="last-updated">
-        This page last updated
-      </p>
+    <header class="top-header">
+      <div class="wrapper">
+        <div class="site-banner">
+          <!--<h1><a href="index.html">Web Design for Design Majors</a></h1>-->
+          <a href="index.html"><img src="/images/web-logo.svg" width="240" height="62"></a>
+          <div class="site-info">
+            <h3>DES 340 - 001</h3>
+            <h3>Spring 2017</h3>
+          </div>
+        </div>
+        <nav id="class-info">
+          <ul>
+            <li><a href="DES340-001_SP17_Norris.pdf" target="_blank">Syllabus</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="required-accounts.html">Accounts</a></li>
+            <li><a href="code-school.html">Code School</a></li>
+            <li><a href="invision.html">InVision</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div> <!-- end wrapper -->
     </header>
 
-    <section id="class-info">
-      <h2>Important Class Information</h2>
-      <ul>
-        <li><a href="DES340-001_SP17_Norris.pdf" target="_blank">Syllabus</a></li>
-        <li><a href="calendar.html">Class Calendar</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="required-accounts.html">Required Accounts</a></li>
-        <li><a href="code-school.html">Code School Courses</a></li>
-        <li><a href="invision.html">InVision Boards</a></li>
-      </ul>
-    </section>
+    <div class="content">
+      <div class="wrapper">
 
-    <section id="required">
-      <h2>Required</h2>
-      <h4>HTML/CSS Path</h4>
-      <p>Due dates are noted on the <a href="calendar.html">calendar</a>. Late completions will recieve half credit.</p>
-      <ol>
-        <li>
-          <h3>Front-end Foundations <em>(15 points)</em></h3>
-          <p class="due-date">Due Friday, February 3rd</p>
-          <p>This course introduces you to you the basics of HTML and CSS.</p>
-          <p><a target="_blank" href="https://briannorris.io/msuweb/Front-end-Foundations.pdf">Download Front-end Foundations Slides</a></p>
-        </li>
-        <li>
-          <h3>The Elements of Web Design <em>(15 points)</em></h3>
-          <p class="due-date">Due Wednesday, February 15th</p>
-          <p>This course digs into the user-centered planning and workflow of building a site or app. A lot of the content here is based on the idea of user testing. (User testing is hard and expensive, but if you can learn to better put yourself in the user&rsquo;s place, you can user test yourself. You can also use colleagues and friends as cheap user testing.)</p>
-          <p><a href="https://briannorris.io/msuweb/CodeSchool-The-Elements-of-Web-Design-all-levels.pdf">Download The Elements of Web Design Slides</a></p>
-        </li>
-        <li>
-          <h3>Fundamentals of Design <em>(10 points)</em></h3>
-          <p class="due-date">Due Monday, February 27th</p>
-          <p>This course talks about type, color and layout in reference to web design. It&rsquo;s geared towards non-designers, so much of this is going to be stuff you already know, and probably have a better handle on than this course. However, there is a handful of useful content here that should be new to you, so I think it&rsquo;s worth tackling. You will probably be annoyed.</p>
-        </li>
-        <li>
-          <h3>CSS Cross-Country <em>(20 points)</em></h3>
-          <p class="due-date">Due Monday, March 6th</p>
-          <p>This course throws you into the deep-end of CSS. Remember to check <a href="https://developer.mozilla.org/en-US/">MDN</a> and <a href="http://cssreference.io/">cssreference.io</a> for help!</p>
-          <p><a href="https://briannorris.io/msuweb/cssxcountry_slides.pdf">Download CSS Cross-Country Slides</a></p>
-        </li>
-        <li>
-          <h3>Front-end Formations <em>(15 points)</em></h3>
-          <p class="due-date">Due Monday, March 20th</p>
-          <p>This course talks about some newer items in HTML/CSS. Use <a href="https://developer.mozilla.org/en-US/">MDN</a>, <a href="http://cssreference.io/">cssreference.io</a> or the <a href="http://msuweb.design">msuweb.design</a> source code for help.</p>
-          <p><a href="https://briannorris.io/msuweb/Front-end-Formations.pdf">Download Front-end Formations Slides</a></p>
-        </li>
-        <li>
-          <h3>Discovering Dev Tools [in the electives path] <em>(5 points)</em></h3>
-          <p class="due-date">Due Monday, March 27th</p>
-          <p>This will walk you through the Chrome developer tools. These tools are essential for debugging your work. One caveat, chrome has already advanced since they made this course, so you may find some icons and locations of buttons have changed. You will obviously need to use Chrome for this, even though all modern browsers have developer tools of their own.
-          <strong>You only need to do sections 1, 2 and 5.</strong> The others refer mostly to Javascript debugging. Feel free to skip any of the challenges, since this is a little out of date, some of them won&rsquo;t work correctly.</p>
-        </li>
-        <li>
-          <h3>Journey into Mobile <em>(20 points)</em></h3>
-          <p class="due-date">Due Wednesday, April 5th</p>
+        <p id="last-updated">
+          This page last updated
+        </p>
+
+
+        <section id="required">
+          <h2>Required</h2>
+          <h4>HTML/CSS Path</h4>
+          <p>Due dates are noted on the <a href="calendar.html">calendar</a>. Late completions will recieve half credit.</p>
           <ol>
-            <li>This course walks you through how to develop websites for any device.</li>
-            <li><strong>Some notes:</strong> It&rsquo;s not usually necessary to convert your pixels to EMs anymore, but EMs still have their benefits.</li>
-            <li>This is where stuff starts to get extremely opinionated and arguments about best practices start. Pay attention to the technical aspects of media queries, etc. But I&rsquo;ll definitely have things to say about &ldquo;mobile first&rdquo; and &ldquo;breakpoints.&rdquo;</li>
-            <li>This course is also a little old, and there are some newer better options for things like responsive and retina images I&rsquo;ll talk about in class.</li>
+            <li>
+              <h3>Front-end Foundations <em>(15 points)</em></h3>
+              <p class="due-date">Due Friday, February 3rd</p>
+              <p>This course introduces you to you the basics of HTML and CSS.</p>
+              <p><a target="_blank" href="https://briannorris.io/msuweb/Front-end-Foundations.pdf">Download Front-end Foundations Slides</a></p>
+            </li>
+            <li>
+              <h3>The Elements of Web Design <em>(15 points)</em></h3>
+              <p class="due-date">Due Wednesday, February 15th</p>
+              <p>This course digs into the user-centered planning and workflow of building a site or app. A lot of the content here is based on the idea of user testing. (User testing is hard and expensive, but if you can learn to better put yourself in the user&rsquo;s place, you can user test yourself. You can also use colleagues and friends as cheap user testing.)</p>
+              <p><a href="https://briannorris.io/msuweb/CodeSchool-The-Elements-of-Web-Design-all-levels.pdf">Download The Elements of Web Design Slides</a></p>
+            </li>
+            <li>
+              <h3>Fundamentals of Design <em>(10 points)</em></h3>
+              <p class="due-date">Due Monday, February 27th</p>
+              <p>This course talks about type, color and layout in reference to web design. It&rsquo;s geared towards non-designers, so much of this is going to be stuff you already know, and probably have a better handle on than this course. However, there is a handful of useful content here that should be new to you, so I think it&rsquo;s worth tackling. You will probably be annoyed.</p>
+            </li>
+            <li>
+              <h3>CSS Cross-Country <em>(20 points)</em></h3>
+              <p class="due-date">Due Monday, March 6th</p>
+              <p>This course throws you into the deep-end of CSS. Remember to check <a href="https://developer.mozilla.org/en-US/">MDN</a> and <a href="http://cssreference.io/">cssreference.io</a> for help!</p>
+              <p><a href="https://briannorris.io/msuweb/cssxcountry_slides.pdf">Download CSS Cross-Country Slides</a></p>
+            </li>
+            <li>
+              <h3>Front-end Formations <em>(15 points)</em></h3>
+              <p class="due-date">Due Monday, March 20th</p>
+              <p>This course talks about some newer items in HTML/CSS. Use <a href="https://developer.mozilla.org/en-US/">MDN</a>, <a href="http://cssreference.io/">cssreference.io</a> or the <a href="http://msuweb.design">msuweb.design</a> source code for help.</p>
+              <p><a href="https://briannorris.io/msuweb/Front-end-Formations.pdf">Download Front-end Formations Slides</a></p>
+            </li>
+            <li>
+              <h3>Discovering Dev Tools [in the electives path] <em>(5 points)</em></h3>
+              <p class="due-date">Due Monday, March 27th</p>
+              <p>This will walk you through the Chrome developer tools. These tools are essential for debugging your work. One caveat, chrome has already advanced since they made this course, so you may find some icons and locations of buttons have changed. You will obviously need to use Chrome for this, even though all modern browsers have developer tools of their own.
+              <strong>You only need to do sections 1, 2 and 5.</strong> The others refer mostly to Javascript debugging. Feel free to skip any of the challenges, since this is a little out of date, some of them won&rsquo;t work correctly.</p>
+            </li>
+            <li>
+              <h3>Journey into Mobile <em>(20 points)</em></h3>
+              <p class="due-date">Due Wednesday, April 5th</p>
+              <ol>
+                <li>This course walks you through how to develop websites for any device.</li>
+                <li><strong>Some notes:</strong> It&rsquo;s not usually necessary to convert your pixels to EMs anymore, but EMs still have their benefits.</li>
+                <li>This is where stuff starts to get extremely opinionated and arguments about best practices start. Pay attention to the technical aspects of media queries, etc. But I&rsquo;ll definitely have things to say about &ldquo;mobile first&rdquo; and &ldquo;breakpoints.&rdquo;</li>
+                <li>This course is also a little old, and there are some newer better options for things like responsive and retina images I&rsquo;ll talk about in class.</li>
+              </ol>
+              <p><a href="https://briannorris.io/msuweb/journey_into_mobile_slides.pdf">Download Journey Into Mobile Slides</a></p>
+            </li>
           </ol>
-          <p><a href="https://briannorris.io/msuweb/journey_into_mobile_slides.pdf">Download Journey Into Mobile Slides</a></p>
-        </li>
-      </ol>
-    </section>
+        </section>
 
-    <section id="optional-front-end">
-      <h2>Optional Front-End</h2>
-      <h3><em>(small amounts of extra credit, 10 points each)</em> HTML/CSS Path</h3>
-      <ul>
-        <li>Cracking the Case with Flexbox</li>
-        <li>Unmasking HTML Emails</li>
-        <li>Adventures in Web Animations</li>
-        <li>You, Me &amp; SVG</li>
-    </section>
+        <section id="optional-front-end">
+          <h2>Optional Front-End</h2>
+          <h3><em>(small amounts of extra credit, 10 points each)</em> HTML/CSS Path</h3>
+          <ul>
+            <li>Cracking the Case with Flexbox</li>
+            <li>Unmasking HTML Emails</li>
+            <li>Adventures in Web Animations</li>
+            <li>You, Me &amp; SVG</li>
+        </section>
 
-    <section id="optional-js">
-      <h2>Optional Javascript</h2>
-      <h3><em>(small amounts of extra credit, 5 points each)</em> JavaScript Path</h3>
-      <ul>
-        <li>Javascript Road Trip Part 1</li>
-        <li>Try jQuery</li>
-        <li>Javascript Road Trip Part 2</li>
-        <li>jQuery: The Return Flight</li>
-        <li>Javascript Road Trip Part 3</li>
-    </section>
+        <section id="optional-js">
+          <h2>Optional Javascript</h2>
+          <h3><em>(small amounts of extra credit, 5 points each)</em> JavaScript Path</h3>
+          <ul>
+            <li>Javascript Road Trip Part 1</li>
+            <li>Try jQuery</li>
+            <li>Javascript Road Trip Part 2</li>
+            <li>jQuery: The Return Flight</li>
+            <li>Javascript Road Trip Part 3</li>
+        </section>
+      </div><!-- wrapper -->
+    </div><!-- content -->
 
     <footer>
-      <a href="https://github.com/bdnorris/bdnorris.github.io">View this project on GitHub</a><br>
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+      <div class="wrapper">
+        <ul>
+          <li>Instructor: Brian Norris</li>
+          <li>Brick City 1&mdash;301</li>
+          <li>417.425.7739</li>
+          <li><a href="mailto:briannorris@missouristate.edu">BrianNorris@MissouriState.edu</a></li>
+        </ul>
+        <a href="https://github.com/bdnorris/bdnorris.github.io">View this project on GitHub</a><br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+      </div>
     </footer>
 
-  </div>
   <script src="js/moment.js"></script>
   <script src="js/scripts.js"></script>
 </body>

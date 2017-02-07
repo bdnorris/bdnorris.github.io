@@ -11,25 +11,78 @@ html {
 }
 /* END BOX MODEL SETTINGS */
 
+.clear {
+  clear:  both;
+}
+.wrapper {
+  width:100%;
+  max-width: 960px;
+  padding: 0 2em;
+  margin: 0 auto;
+  /*background-color: yellow;*/
+}
+
+/* -------- HEADER ---------- */
+
+header.top-header {
+  width: 100%;
+  background-color: #4fc3f7;
+  height: 120px;
+}
+
+.site-banner {
+  float: left;
+  padding-top: 1em;
+}
+.site-banner h3 {
+  font-size: 1em;
+  display: inline-block;
+  padding-right: 0.5em;
+  margin: 0.5em 0 1em 0;
+  color: white;
+}
+.site-info {
+
+}
+.site-info h3, .site-info li {
+
+}
+
+/* -- NAVIGATION -- */
+nav {
+  float: right;
+  margin-top: 60px;
+  transform: translateY(-50%);
+  color: white;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 1em;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #b3e5fc;
+}
+
+/* ------- FOOTER ----------*/
+
+footer {
+  background-color: #b3e5fc;
+}
+
 /* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
 
 /*  ---- Text Classes ----  */
 
 a { color: #673ab7 }
-
-/* Assignments */
-.a1, .a1 a { color: #ad1457; }
-.a2, .a2 a { color: #00695c; }
-.a3, .a3 a { color: #d84315; }
-.a4, .a4 a { color: #0277bd; }
-.a5, .a5 a { color: #558b2f; }
-.a6, .a6 a { color: #f9a825; }
-.a7, .a7 a { color: #283593; }
-.cs { color: #607d8b; }
-.important, .off { color: #b71c1c; }
-
-/* for code school */
-.calendar pre { display:inline; }
 
 ul {
   list-style: disc;
@@ -53,7 +106,24 @@ p.meta {
   border: 1px solid #CFD8DC;
 }
 
+/* Assignments */
+.a1, .a1 a { color: #ad1457; }
+.a2, .a2 a { color: #00695c; }
+.a3, .a3 a { color: #d84315; }
+.a4, .a4 a { color: #0277bd; }
+.a5, .a5 a { color: #558b2f; }
+.a6, .a6 a { color: #f9a825; }
+.a7, .a7 a { color: #283593; }
+.cs { color: #607d8b; }
+.important, .off { color: #b71c1c; }
+
+
+
 /* ---- Calendar ---- */
+
+/* for code school  */
+.calendar pre { display:inline; }
+
 section.calendar ul {
   list-style: none;
 }
