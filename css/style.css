@@ -100,9 +100,11 @@ p.meta {
 }
 #examples ul li {
   float: left;
+  width: 50%;
 }
 #examples ul li img {
   margin: 0 1em 1em 0;
+  width: 90%;
   border: 1px solid #CFD8DC;
 }
 
@@ -117,6 +119,9 @@ p.meta {
 .cs { color: #607d8b; }
 .important, .off { color: #b71c1c; }
 
+#assignment h2 {
+  clear: both;
+}
 
 
 /* ---- Calendar ---- */
