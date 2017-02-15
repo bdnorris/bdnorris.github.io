@@ -1,5 +1,8 @@
 /*  ---- Layout Styles ----  */
 
+/* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
+
+
 /* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
 THIS IS BETTER THAN DEFAULT, YOU SHOULD ALWAYS USE THIS:
 */
@@ -21,12 +24,15 @@ html {
   margin: 0 auto;
   /*background-color: yellow;*/
 }
+.content {
+  padding: 2em 0 3em 0;
+}
 
 /* -------- HEADER ---------- */
 
 header.top-header {
   width: 100%;
-  background-color: #4fc3f7;
+  background-color: #1565C0;
   height: 120px;
 }
 
@@ -75,8 +81,9 @@ nav ul li a:hover {
 /* ------- FOOTER ----------*/
 
 footer {
-  background-color: #b3e5fc;
+  background-color: #0D47A1;
   padding: 1em 0;
+  color: white;
 }
 footer ul {
   list-style: none;
@@ -88,7 +95,7 @@ footer ul li {
   display: inline-block;
   padding-right: 1em;
   padding-left: 1em;
-  border-right: 1px solid black;
+  border-right: 1px solid #1976D2;
 }
 footer ul li:first-child {
   padding-left: 0;
@@ -97,11 +104,10 @@ footer ul li:last-child {
   border-right: none;
 }
 footer a {
+  color: #90CAF9;
   display: inline-block;
   margin-bottom: 0.5em;
 }
-
-/* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
 
 /*  ---- Text Classes ----  */
 
@@ -123,9 +129,11 @@ p.meta {
 }
 #examples ul li {
   float: left;
+  width: 50%;
 }
 #examples ul li img {
   margin: 0 1em 1em 0;
+  width: 90%;
   border: 1px solid #CFD8DC;
 }
 
@@ -140,6 +148,9 @@ p.meta {
 .cs { color: #607d8b; }
 .important, .off { color: #b71c1c; }
 
+#assignment h2 {
+  clear: both;
+}
 
 
 /* ---- Calendar ---- */
