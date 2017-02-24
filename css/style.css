@@ -137,6 +137,21 @@ p.meta {
   border: 1px solid #CFD8DC;
 }
 
+/* Assignments */
+.a1, .a1 a { color: #ad1457; }
+.a2, .a2 a { color: #00695c; }
+.a3, .a3 a { color: #d84315; }
+.a4, .a4 a { color: #0277bd; }
+.a5, .a5 a { color: #558b2f; }
+.a6, .a6 a { color: #f9a825; }
+.a7, .a7 a { color: #283593; }
+.cs { color: #607d8b; }
+.important, .off { color: #b71c1c; }
+
+#assignment h2 {
+  clear: both;
+}
+
 blockquote {
   position: relative;
   margin: 2em 0;
@@ -161,24 +176,6 @@ blockquote::before {
   bottom: 0;
   right: 0;
 }*/
-
-
-
-/* Assignments */
-.a1, .a1 a { color: #ad1457; }
-.a2, .a2 a { color: #00695c; }
-.a3, .a3 a { color: #d84315; }
-.a4, .a4 a { color: #0277bd; }
-.a5, .a5 a { color: #558b2f; }
-.a6, .a6 a { color: #f9a825; }
-.a7, .a7 a { color: #283593; }
-.cs { color: #607d8b; }
-.important, .off { color: #b71c1c; }
-
-#assignment h2 {
-  clear: both;
-}
-
 
 /* ---- Calendar ---- */
 
