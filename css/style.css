@@ -14,6 +14,92 @@ html {
 }
 /* END BOX MODEL SETTINGS */
 
+
+/*  ---- Text Classes ----  */
+
+h1, h2, h3, h4, h5 {
+	margin: 1.5em 0 0.5em 0;
+}
+
+a { color: #673ab7 }
+
+ul {
+  list-style: disc;
+	line-height: 1.5em;
+}
+ul li {
+	margin: 0 0 0.25em 0;
+}
+
+p {
+	line-height: 1.4em;
+	margin: 0 0 0.8em 0;
+}
+
+p.meta {
+  font-style: italic;
+  margin: 0.333em 0;
+}
+
+#examples ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+#examples ul li {
+  float: left;
+  width: 50%;
+}
+#examples ul li img {
+  margin: 0 1em 1em 0;
+  width: 90%;
+  border: 1px solid #CFD8DC;
+}
+
+/* Assignments */
+.a1, .a1 a { color: #ad1457; }
+.a2, .a2 a { color: #00695c; }
+.a3, .a3 a { color: #d84315; }
+.a4, .a4 a { color: #0277bd; }
+.a5, .a5 a { color: #558b2f; }
+.a6, .a6 a { color: #f9a825; }
+.a7, .a7 a { color: #283593; }
+.cs { color: #607d8b; }
+.important, .off { color: #b71c1c; }
+
+#assignment h2 {
+  clear: both;
+}
+
+blockquote {
+  position: relative;
+  margin: 2em 0;
+  padding: 2em 0;
+  border-top: 1px solid #0D47A1;
+  border-bottom: 2px solid #0D47A1;
+}
+blockquote::before {
+  position: absolute;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  content:'\201C';
+  font-size: 8em;
+  color: #0D47A1;
+	left: -0.45em;
+  top: 1rem;
+}
+blockquote h3 {
+	margin-top: 0;
+}
+/*blockquote::after {
+  bottom: 0;
+  right: 0;
+}*/
+
+
+
+
 .clear {
   clear:  both;
 }
@@ -109,73 +195,7 @@ footer a {
   margin-bottom: 0.5em;
 }
 
-/*  ---- Text Classes ----  */
 
-a { color: #673ab7 }
-
-ul {
-  list-style: disc;
-}
-
-p.meta {
-  font-style: italic;
-  margin: 0.333em 0;
-}
-
-#examples ul {
-  list-style: none;
-  margin:0;
-  padding:0;
-}
-#examples ul li {
-  float: left;
-  width: 50%;
-}
-#examples ul li img {
-  margin: 0 1em 1em 0;
-  width: 90%;
-  border: 1px solid #CFD8DC;
-}
-
-/* Assignments */
-.a1, .a1 a { color: #ad1457; }
-.a2, .a2 a { color: #00695c; }
-.a3, .a3 a { color: #d84315; }
-.a4, .a4 a { color: #0277bd; }
-.a5, .a5 a { color: #558b2f; }
-.a6, .a6 a { color: #f9a825; }
-.a7, .a7 a { color: #283593; }
-.cs { color: #607d8b; }
-.important, .off { color: #b71c1c; }
-
-#assignment h2 {
-  clear: both;
-}
-
-blockquote {
-  position: relative;
-  margin: 2em 0;
-  padding: 1em 0;
-  border-top: 1px solid #0D47A1;
-  border-bottom: 2px solid #0D47A1;
-}
-blockquote::before {
-  position: absolute;
-  display: block;
-  width: 0.5em;
-  height: 0.5em;
-  content:'\201C';
-  font-size: 8em;
-  color: #0D47A1;
-}
-blockquote::before {
-  left: -0.45em;
-  top: 0.15em;
-}
-/*blockquote::after {
-  bottom: 0;
-  right: 0;
-}*/
 
 /* ---- Calendar ---- */
 
