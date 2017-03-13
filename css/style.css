@@ -2,7 +2,55 @@
 
 /*  ---- Layout Styles ----  */
 
+.clear {
+  clear:  both;
+}
+.content {
+  width: 100%;
+  padding: 1em 0 3em 0;
+}
+.meta {
+  width: 100%;
+  margin: 1em 0 1.2em 0;
+}
+.wrapper {
+  max-width: 960px;
+  padding: 0 2em;
+  margin: 0 auto;
+  /*background-color: yellow;*/
+}
+.wrapper-w-marg {
+  max-width: 980px;
+}
+
+
+.card {
+	width: calc(33.3333% - 20px);
+	float: left;
+	border: 3px solid #ccc;
+	margin: 0 10px 20px 10px;
+	height: 12em;
+	padding: 1em 1em 1.2em 1em;
+	transition: border-color 0.5s ease;
+  text-decoration: none;
+}
+.card:hover {
+	border-color: currentColor;
+}
+.card h2 {
+	margin: 0 0 0.5em 0;
+}
+.card h3 {
+	margin: 0 0 0.333em 0;
+}
+section.assignments:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 /* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
+
 
 
 /* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
@@ -27,6 +75,10 @@ body {
 
 h1, h2, h3, h4, h5 {
 	margin: 1.5em 0 0.5em 0;
+}
+
+h2:first-child {
+  margin-top: 0;
 }
 
 a { color: #673ab7 }
@@ -110,19 +162,7 @@ blockquote h3 {
 
 
 
-.clear {
-  clear:  both;
-}
-.wrapper {
-  width:100%;
-  max-width: 960px;
-  padding: 0 2em;
-  margin: 0 auto;
-  /*background-color: yellow;*/
-}
-.content {
-  padding: 2em 0 3em 0;
-}
+
 
 /* -------- HEADER ---------- */
 
