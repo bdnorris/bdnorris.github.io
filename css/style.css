@@ -24,7 +24,7 @@
 }
 
 
-.card {
+.card, a.exercise {
 	width: calc(33.3333% - 20px);
 	float: left;
 	border: 3px solid #ccc;
@@ -33,6 +33,7 @@
 	padding: 1em 1em 1.2em 1em;
 	transition: border-color 0.5s ease;
   text-decoration: none;
+  border-radius: 6px;
 }
 .card:hover {
 	border-color: currentColor;
@@ -48,6 +49,16 @@ section.assignments:after {
 	display: table;
 	clear: both;
 }
+
+a.exercise {
+  display: block;
+  width: calc(100% - 20px);
+  height: auto;
+  float: none;
+  font-size: 2em;
+  color: #455A64;
+}
+a.exercise:hover { border-color: #455A64; }
 
 /* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
 
