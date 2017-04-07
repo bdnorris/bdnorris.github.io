@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:200,300,400,400i,600,700,900|Source+Serif+Pro:400,600,700');
 
+
+/* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
+THIS IS BETTER THAN DEFAULT, YOU SHOULD ALWAYS USE THIS:
+*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* END BOX MODEL SETTINGS */
+
+
+/* FONTS */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 /*  ---- Layout Styles ----  */
 
 .clear {
@@ -63,24 +83,6 @@ a.exercise:hover { border-color: #455A64; }
 /* Colors from https://material.io/guidelines/style/color.html#color-color-palette */
 
 
-
-/* BOX MODEL SETTING FOR ALL ELEMENTS BY DEFAULT
-THIS IS BETTER THAN DEFAULT, YOU SHOULD ALWAYS USE THIS:
-*/
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-/* END BOX MODEL SETTINGS */
-
-
-/* FONTS */
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-}
 
 /*  ---- Text Classes ----  */
 
@@ -214,6 +216,8 @@ nav ul li {
   text-align: center;
   margin: 0;
 }
+
+nav ul li a {display: block;}
 nav ul li a svg {
   display: block;
   width: 30px;
