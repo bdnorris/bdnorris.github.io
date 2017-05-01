@@ -49,7 +49,7 @@ body {
 	float: left;
 	border: 3px solid #ccc;
 	margin: 0 10px 20px 10px;
-	height: 12em;
+	height: 14em;
 	padding: 1em 1em 1.2em 1em;
 	transition: border-color 0.5s ease;
   text-decoration: none;
@@ -64,6 +64,21 @@ body {
 .card h3 {
 	margin: 0 0 0.333em 0;
 }
+@media only screen and (max-width:768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+@media only screen and (max-width:480px) {
+  .card {
+    width: 100%;
+    margin: 0 0 20px 0;
+    height: auto;
+  }
+}
+
+
+
 section.assignments:after {
 	content: '';
 	display: table;
@@ -121,12 +136,21 @@ p.meta {
 }
 #examples ul li {
   float: left;
-  width: 50%;
+  width: calc(50% - 1em);
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 #examples ul li img {
-  margin: 0 1em 1em 0;
-  width: 90%;
+  /*margin: 0 1em 1em 0;*/
+  width: 100%;
+  height: auto;
+  display: block;
   border: 1px solid #CFD8DC;
+}
+@media only screen and (max-width:480px) {
+  #examples ul li {
+    width: 100%;
+  }
 }
 
 /* Assignments */
@@ -245,6 +269,26 @@ nav ul#sub-nav li {
   text-align: right;
 }
 
+@media only screen and (max-width:600px) {
+  nav, .site-banner {
+    float: none;
+  }
+  .site-banner {
+    text-align: center;
+  }
+  nav ul {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  nav ul#sub-nav {
+    padding-bottom: 0;
+  }
+  nav ul li {
+    padding: 0 0.5em 0.5em 0.5em;
+
+  }
+}
+
 /* ------- FOOTER ----------*/
 
 footer {
@@ -302,4 +346,21 @@ section.calendar ul li ul {
 }
 #past ul li, #past ul li ul li  {
   color: #b0bec5;
+}
+
+
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width:768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }
